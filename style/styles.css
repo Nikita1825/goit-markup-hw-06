@@ -390,8 +390,18 @@ height: 8px;
 .form-group:focus-within > .icon-form {
     fill: var(--accent-color);
 }
+.form-group:focus-within > .form-input {
+    
+border: 1px solid #4D5AE5;
+border-radius: 4px;
+
+}
 textarea {
     resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 8px;
 }
 
 
@@ -473,9 +483,7 @@ border-radius: 2px;
     padding-left: 16px;
    color:rgba(255, 255, 255, 0.6)
 }
-.form-footer {
-   margin-left: auto;
-}
+
 
 
 
@@ -726,7 +734,11 @@ color: var(--white-text);
 }
 .logo-container {
     display: flex;
-    gap: 120px
+    
+}
+.icons-container {
+    margin-left: 120px;
+    margin-right: 80px;
 }
  
 
