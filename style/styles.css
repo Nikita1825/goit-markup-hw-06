@@ -370,6 +370,7 @@ height: 8px;
     text-align: center;
     border: none;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    transition: var(--main-transition);
 }
 .form-submit {
     display: flex;
@@ -381,7 +382,13 @@ height: 8px;
     position: absolute;
     bottom: 14px;
     left: 17.5px;
+    fill: #2E2F42;
+    transition:  var(--main-transition);
     
+}
+
+.form-group:focus-within > .icon-form {
+    fill: var(--accent-color);
 }
 textarea {
     resize: none;
@@ -416,17 +423,41 @@ border-radius: 4px;
      color: var(--white-text);
     background: #404BBF; 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 4px;
+border-radius: 4px; 
 }
 
 
 
 
+.input-checkbox {
+    position: absolute; 
+width: 1px; 
+height: 1px; 
+margin: -1px; 
+padding: 0; 
+overflow: hidden; 
+border: 0; 
+clip: rect(0 0 0 0);
+}
+
+.checkbox-icon {
+    content:"" ;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transition: var(--main-transition);
 
 
 
-
-
+border: 1.25px solid #2E2F42;
+border-radius: 2px;
+}
+ 
+.input-checkbox:checked + .checkbox-icon {
+    background-image: url(../img/Property\ 1=click.svg);
+    background-size: contain;
+    border: none;
+}
 
 
 
@@ -464,6 +495,7 @@ border-radius: 4px;
     border: none;
     margin-left: 24px;
     text-align: start;
+    transition: var(--main-transition);
 }
 .submit-icon {
     position: absolute;
